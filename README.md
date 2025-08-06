@@ -118,7 +118,7 @@ Langkah-langkah preprocessing yang dilakukan antara lain:
 
 Pada tahap preprosesing ini, Stemming dan lemmatization secara sengaja **tidak dilakukan** karena dapat merusak struktur semantik kalimat, yang penting bagi model embedding berbasis kalimat seperti Sentence-BERT.
 
-![hasil preprosesing](gambar\hasil-preprosesing.png)
+![hasil preprosesing](gambar/hasil-preprosesing.png)
 
 Gambar 4\. 1 Hasil Preprosesing
 
@@ -128,7 +128,7 @@ Gambar 4\. 1 Hasil Preprosesing
 
 	Setelah melakukan tahap reduksi dimensi, disini saya juga menerapkan tahap ***Elbow Method*** untuk menentukan *k* optimal alias banyaknya kluster yang cocok untuk KMeans untuk dataset yang saya gunakan.
 
-![Optimal k Dengan Elbow Method](gambar\elbow.png)
+![Optimal k Dengan Elbow Method](gambar/elbow.png)
 
 Gambar 4\. 2 Optimal k Dengan Elbow Method
 
@@ -149,11 +149,11 @@ Tabel 4\. 2 Evaluasi Internal Matriks
 
 Hasil evaluasi menunjukkan bahwa model menghasilkan pembagian klaster yang cukup baik, terutama pada KMeans dengan jumlah klaster yang tepat. HDBSCAN juga efektif terutama dalam menangani data yang tidak terstruktur dengan baik. Visualisasi klaster KMeans dapat dilihat pada *Gambar 4.3* dan klaster hasil dari HDBSCAN dapat dilihat pada *Gambar 4.4.*
 
-![visual klaster kmeans](gambar\klaster-kmeans.png)
+![visual klaster kmeans](gambar/klaster-kmeans.png)
 
 Gambar 4\. 3 Visualisasi Klaster KMeans
 
-![visual klaster hdbscan](gambar\klaster-hdbscan.png)
+![visual klaster hdbscan](gambar/klaster-hdbscan.png)
 
 Gambar 4\. 4 Visualisasi Klaster HDBSCAN
 
@@ -167,7 +167,7 @@ Gambar 4\. 4 Visualisasi Klaster HDBSCAN
 | 4\. fantastic charting functionality truly top notch one feature would like see available browser ability movecopy symbols watchlists also another reviewer mentioned always reflect changes made browser earlier day happen times overall best charting far |
 | 5\. used mobile version short time thus far web version best charting software used many tools use data many viewing options thus far mobile version keeps tradition excellent update years later still using enjoying tradingview |
 | Top 10 kata: \[('trading', 292), ('best', 173), ('tradingview', 158), ('use', 135), ('charting', 126), ('charts', 122), ('good', 112), ('platform', 111), ('chart', 109), ('great', 108)\] |
-| ![WC Kmeans-0](gambar\wc-kmeans0.png) |
+| ![WC Kmeans-0](gambar/wc-kmeans0.png) |
 | **\--- KMeans Cluster 1 \---** |
 | 1\. updated works flawlessly tab corrected issue back stars looking stock chart everything fine tap stock ticker name top left corner choose different ticker look screen rotates portrait even though tablet landscape super wonky seems unfinished rate higher due gets fixed change rating thanks samsung galaxy tab |
 | 2\. really digging far still number visual glitches screen zooms either impossibly impossibly close also scrollingzooming viewport indicators move sync sometimes turn indicators fix usually considering scripts built community expected started basic payed version see goes |
@@ -175,7 +175,7 @@ Gambar 4\. 4 Visualisasi Klaster HDBSCAN
 | 4\. desktop version fantastic however leave screen open idle seconds freezes hard reset phone happened times basically useless phone forced use laptop defeats purpose negative update new updates problem longer exists everything works great |
 | 5\. bring back news watchlist button right side bar previously alarms button desktop version removed news flow located bottom technicals window minimize see watchlist drill keep finding news also keep lightning bolt chart specific news great however move bar right cover current days volume bar make opaquethanks |
 | Top 10 kata: \[('update', 185), ('new', 122), ('please', 113), ('version', 100), ('time', 94), ('use', 74), ('back', 70), ('screen', 63), ('fix', 63), ('like', 62)\] |
-| ![WC Kmeans-1](gambar\wc-kmeans1.png) |
+| ![WC Kmeans-1](gambar/wc-kmeans1.png) |
 | **\--- KMeans Cluster 2 \---** |
 | 1\. super super good cellphone touch interface brilliant tons data course indicators easy add charts zooming zooming extremely intuitive fast data easy see cellphone get better trading getting subscription update bought black friday special set alerts alert woke bought bitcoin alert woke back sold less hours made money back |
 | 2\. mobile needs optimization account reduced screen size service excellent well worth money tablet course easier use increased screen real estate could use tutorial features gestures navigate example idea find alerts thing |
@@ -183,7 +183,7 @@ Gambar 4\. 4 Visualisasi Klaster HDBSCAN
 | 4\. love used almost everyday last years honestly say major issues feature many name top notched editable customisable slight learning curve easy use get lot relates markets put time effort learn something well |
 | 5\. really like upgraded paid plan find worth great job way around wondering integrating stock screener works know open browser phone navigate home get screener etc would nice button regardless great product |
 | Top 10 kata: \[('use', 121), ('great', 98), ('good', 96), ('like', 90), ('would', 87), ('trading', 86), ('free', 82), ('version', 76), ('time', 66), ('best', 63)\] |
-| ![WC Kmeans-2](gambar\wc-kmeans2.png) |
+| ![WC Kmeans-2](gambar/wc-kmeans2.png) |
 | **\--- KMeans Cluster 3 \---** |
 | 1\. update scroll wheels time frames ticker great update new ui older ui efficient please bring back option retain time single tap changed require single tap ui failure point changing things sake aesthetics |
 | 2\. seen workaround responses also going point bad ux new popup click symbol get full chart latest update pointless please default back going straight chart click symbol otherwise course love tradingview still think unparalleled |
@@ -191,7 +191,7 @@ Gambar 4\. 4 Visualisasi Klaster HDBSCAN
 | 4\. lists terrible pop click chart see getba pop available chart settings makes feel chunky fluid magnet drawing lines hard fingers way needs way use tools move without fingers way tap hold crosshairs used move around without needing fingers way use show people eyes looking |
 | 5\. love gave new chart chance used weeks go back old chart much quicker maneuver timeframes chart types indicators using old chart good attempt though new chart ui looks prettier old annoying click multiple times select feature click top old chart |
 | Top 10 kata: \[('chart', 418), ('update', 189), ('charts', 183), ('time', 139), ('please', 127), ('new', 99), ('open', 79), ('fix', 76), ('view', 76), ('version', 76)\] |
-| ![WC Kmeans-3](gambar\wc-kmeans3.png) |
+| ![WC Kmeans-3](gambar/wc-kmeans3.png) |
 
 Tabel 4\. 3 WordCloud dan Sampel Ulasan Tiap Klaster KMeans
 
@@ -212,7 +212,7 @@ Tabel 4\. 4 Topik Ulasan Tiap Klaster KMeans
 | 4\. able seamlessly creat ratio charts example gldslv functionality seems completely gone mobile happened please fix elaborate broke update edit problem fixed thanks love |
 | 5\. going back switching another charts automatically refresh come latest time stay point left annoying go back chart manually |
 | Top 10 kata: \[('chart', 166), ('update', 76), ('charts', 64), ('please', 51), ('time', 48), ('new', 43), ('open', 42), ('version', 35), ('fix', 33), ('layout', 30)\] |
-| ![WC hdbscan-0](gambar\wc-hdbscan0.png) |
+| ![WC hdbscan-0](gambar/wc-hdbscan0.png) |
 | **\--- HDBSCAN Cluster 1 \---** |
 | 1\. aspiring forex trader currently demo trading useful mefrom ui functionality available tools everything well put togetheri able analyze charts mobile phone virtually precision would laptopnow impressive big props developersas someone else revieweda lot work put shows lot |
 | 2\. honestly say really helpful gives alot free trading signals indicators want indicators turned though start paying month free access still gives alot worth using pay though get use apply technical indicators copy professional analytics clean ui easy navigate supports dark mode well also accurate lagging market pulse |
@@ -220,7 +220,7 @@ Tabel 4\. 4 Topik Ulasan Tiap Klaster KMeans
 | 4\. absolutely priceless application would recommend anyone piece together good strategy makes chart calculations overlay multiple indicators great feature best thing application completely customizable perfectly calculate profitable strategic methods quick cash instantly live chart also customized great application guys keep good work take care |
 | 5\. amazing watch market make predictions entering numbers mt much smoother easier read mt charts also ton helpful features utilize thinking upgrading paid version simply alerts free version amazing |
 | Top 10 kata: \[('trading', 150), ('use', 68), ('best', 55), ('good', 54), ('free', 53), ('great', 49), ('tradingview', 43), ('platform', 43), ('view', 42), ('like', 40)\] |
-| ![WC hdbscan-1](gambar\wc-hdbscan1.png) |
+| ![WC hdbscan-1](gambar/wc-hdbscan1.png) |
 | **\--- HDBSCAN Cluster 2 \---** |
 | 1\. good would like side bar easy choose favorite tools minimisable create room would recommend |
 | 2\. pretty good good scripting executions real time without lag slightly clunky places think gotten better time |
@@ -228,7 +228,7 @@ Tabel 4\. 4 Topik Ulasan Tiap Klaster KMeans
 | 4\. great easy use suggestion please make easy add pinescript mobile struggling pinescript |
 | 5\. awesome almost good desktop version love info palm hand |
 | Top 10 kata: \[('like', 15), ('time', 14), ('good', 13), ('great', 12), ('use', 10), ('make', 9), ('would', 8), ('love', 8), ('version', 8), ('alert', 8)\] |
-| ![WC hdbscan-2](gambar\wc-hdbscan2.png) |
+| ![WC hdbscan-2](gambar/wc-hdbscan2.png) |
 | **\--- HDBSCAN Cluster 3 \---** |
 | 1\. really digging far still number visual glitches screen zooms either impossibly impossibly close also scrollingzooming viewport indicators move sync sometimes turn indicators fix usually considering scripts built community expected started basic payed version see goes |
 | 2\. edit fixed update thank favorite time frames point favorite time frames easy access kind dumb design favorite time frames used top easy access one click click bottom change iphone able scroll bottom switch favorite tf makes sense android ui horrible renew premium year awful design |
@@ -236,7 +236,7 @@ Tabel 4\. 4 Topik Ulasan Tiap Klaster KMeans
 | 4\. sofar good pls consider add zoom pinescript small edit script without glasses |
 | 5\. panel v historic alerts sended account thanks assistance found |
 | Top 10 kata: \[('update', 64), ('new', 41), ('please', 38), ('version', 32), ('time', 31), ('screen', 29), ('back', 28), ('working', 26), ('open', 24), ('fix', 23)\] |
-| ![WC hdbscan-3](gambar\wc-hdbscan3.png) |
+| ![WC hdbscan-3](gambar/wc-hdbscan3.png) |
 
 Tabel 4\. 5 WordCloud dan Sampel Ulasan Tiap Klaster HDBSCAN
 
